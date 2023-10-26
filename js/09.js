@@ -8,7 +8,7 @@ const frase = prompt("ingrese una frase");
 let vocalesFinale = [];
 
 for (let i = 0; i < frase.length; i++) {
-  if (vocales.includes(frase.charAt(i))) {
+  if (vocales.includes(frase[i])) {
     vocalesFinale.push(frase[i]);
   }
 }
