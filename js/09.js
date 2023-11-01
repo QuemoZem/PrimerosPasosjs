@@ -5,11 +5,12 @@ Nota: Tener en cuenta la función length y substring o charAt
 const vocales = ["a", "e", "i", "o", "u"];
 
 const frase = prompt("ingrese una frase");
+const fraseEnMinusculas = frase.toLowerCase();
 let vocalesFinale = [];
 
-for (let i = 0; i < frase.length; i++) {
-  if (vocales.includes(frase[i])) {
-    vocalesFinale.push(frase[i]);
+for (let i = 0; i < fraseEnMinusculas.length; i++) {
+  if (vocales.includes(fraseEnMinusculas[i])) {
+    vocalesFinale.push(fraseEnMinusculas[i]);
   }
 }
 document.write("Las vocales encontradas son " + vocalesFinale);
